@@ -7,7 +7,7 @@ html(lang="ja")
       header.l-header
         nav.nav
           h1.nav__title 3Dist
-          p.nav__link ABOUT
+          p#js-modal.nav__link ABOUT
       main.l-main
         div.graphic
           p.graphic__img
@@ -53,3 +53,14 @@ html(lang="ja")
       footer.l-footer
         .footer
           p &copy; 2019 sui
+      #js-about.about
+        .about__block
+          h2.about__title ABOUT
+          .about__txt
+            p 3Dの練習中に生まれたものたち、気に入った部分を置いておくだけのページです。<br>試す過程や偶然の表現を切り取って並べてみるのも<br>楽しいかもと思い、はじめてみました。
+            p イラストの背景となるちょっと不思議な空間や、かわいい生き物、<br>好きなお菓子などを作れるようになりたいです。
+            p
+              | Made by 
+              a(href="https://twitter.com/sui_em") sui
+          a#js-close.btn-close
+        

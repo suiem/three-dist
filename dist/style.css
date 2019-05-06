@@ -75,7 +75,7 @@ th {
 /* mediaquery */
 /* ---------------------------------------- */
 body {
-  font-family: ingra, ingra2, -apple-system, BlinkMacSystemFont, "Helvetica Neue", noto-sans, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+  font-family: ingra, ingra2, -apple-system, BlinkMacSystemFont, "Helvetica Neue", 'Noto Sans JP', "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
   font-weight: 300;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -127,6 +127,63 @@ body {
 
 .footer {
   font-size: 16px; }
+
+/* ---------------------------------------- */
+/* modal */
+/* ---------------------------------------- */
+.about {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 99;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.95); }
+  .about__block {
+    justify-self: center;
+    align-self: center; }
+  .about__title {
+    font-size: 56px;
+    margin-bottom: 30px;
+    font-family: ingra-2;
+    font-weight: 200; }
+  .about__txt {
+    font-size: 17px;
+    line-height: 1.8; }
+    .about__txt p {
+      margin-bottom: 20px; }
+  .about a {
+    color: #101E90; }
+    .about a:hover {
+      text-decoration: none; }
+
+.active {
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: 95vh; }
+
+.btn-close {
+  display: inline-block;
+  position: relative;
+  padding: 0;
+  width: 1px;
+  height: 45px;
+  background: #101E90;
+  transform: rotate(55deg); }
+  .btn-close:before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: -22px;
+    width: 45px;
+    height: 1px;
+    margin-top: -2px;
+    background: #101E90;
+    transform: rotate(-20deg); }
 
 /* ---------------------------------------- */
 /* module */
