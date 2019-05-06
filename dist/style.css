@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */
 html,
 body,
@@ -73,15 +74,63 @@ th {
 /* ---------------------------------------- */
 /* mediaquery */
 /* ---------------------------------------- */
-/* ---------------------------------------- */
-/* layout */
-/* ---------------------------------------- */
+body {
+  font-family: ingra, ingra2, -apple-system, BlinkMacSystemFont, "Helvetica Neue", noto-sans, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #101E90;
+  text-align: center; }
+
 /* ---------------------------------------- */
 /* header */
 /* ---------------------------------------- */
+.l-header {
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: 90vh;
+  position: fixed; }
+
+.nav {
+  justify-self: center;
+  align-self: center; }
+  .nav__title {
+    font-size: 80px;
+    font-family: ingra-2;
+    font-weight: 200;
+    margin-bottom: 10px; }
+  .nav__link {
+    font-size: 22px; }
+
+/* ---------------------------------------- */
+/* layout */
+/* ---------------------------------------- */
+.graphic {
+  display: grid;
+  gap: 126px;
+  grid-template-columns: repeat(auto-fit, 160px);
+  justify-content: center;
+  padding: 160px 100px; }
+  .graphic__img {
+    display: contents;
+    background: #F5F8F8; }
+
 /* ---------------------------------------- */
 /* footer */
 /* ---------------------------------------- */
+.l-footer {
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 30px; }
+
+.footer {
+  font-size: 16px; }
+
 /* ---------------------------------------- */
 /* module */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* mixin */
 /* ---------------------------------------- */
