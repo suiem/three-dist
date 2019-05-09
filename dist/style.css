@@ -143,6 +143,7 @@ body {
   box-sizing: border-box;
   background-color: rgba(255, 255, 255, 0.95); }
   .about__block {
+    position: relative;
     justify-self: center;
     align-self: center; }
   .about__title {
@@ -155,39 +156,47 @@ body {
     line-height: 1.8; }
     .about__txt p {
       margin-bottom: 20px; }
-  .about a {
-    color: #101E90; }
-    .about a:hover {
-      text-decoration: none; }
+      .about__txt p a {
+        color: #101E90; }
+        .about__txt p a:hover {
+          text-decoration: none; }
+  .about__btn {
+    position: absolute;
+    right: -60px;
+    top: -30px;
+    width: 70px;
+    height: 47px; }
 
 .active {
   display: grid;
   grid-template-columns: 100vw;
   grid-template-rows: 95vh; }
 
-.btn-close {
-  display: inline-block;
-  position: relative;
-  padding: 0;
-  width: 1px;
-  height: 45px;
-  background: #101E90;
-  transform: rotate(55deg); }
-  .btn-close:before {
-    display: block;
-    content: "";
-    position: absolute;
-    top: 25px;
-    left: -22px;
-    width: 45px;
-    height: 1px;
-    margin-top: -2px;
-    background: #101E90;
-    transform: rotate(-20deg); }
-
 /* ---------------------------------------- */
 /* module */
 /* ---------------------------------------- */
+.btn-close {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  background: #pink; }
+  .btn-close:before, .btn-close:after {
+    content: "";
+    position: absolute;
+    background: #101E90; }
+  .btn-close:before {
+    width: 1px;
+    height: 45px;
+    transform: rotate(55deg); }
+  .btn-close:after {
+    top: 25px;
+    left: 12px;
+    width: 45px;
+    height: 1px;
+    margin-top: -2px;
+    transform: rotate(35deg); }
+
 /* ---------------------------------------- */
 /* mixin */
 /* ---------------------------------------- */

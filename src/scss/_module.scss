@@ -3,3 +3,32 @@
 /* ---------------------------------------- */
 /* module */
 /* ---------------------------------------- */
+
+.btn {
+  &-close {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background: #pink;
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      background: $color-main;
+    }
+    &:before {
+      width: 1px;
+      height: 45px;
+      transform: rotate(55deg);
+    }
+    &:after {
+      top: 25px;
+      left: 12px;
+      width: 45px;
+      height: 1px;
+      margin-top: -2px;
+      transform: rotate(35deg);
+    }
+  }
+}
