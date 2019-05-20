@@ -4,6 +4,7 @@
 /* mediaquery */
 /* ---------------------------------------- */
 
+$break-ss: "screen and (max-width:479px)";
 $break-sm: "screen and (max-width:767px)";
-$break-md: "screen and (max-width:1199px)";
+$break-md: "screen and (min-width:1240px)";
 // $break-lg: "screen and (max-width:1439px)";
